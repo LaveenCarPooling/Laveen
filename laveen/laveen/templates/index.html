@@ -1,10 +1,15 @@
 {% extends "base.html" %}
 
 {% block title %}Laveen-Home{% endblock title %}
-{% block content %}
+
+{% block navbar %}
 {% include 'navbar.html' %}
+{% endblock navbar %}
+
+{% block content %}
 {% include 'about.html' %}
-    index page
 {% endblock content %}
 
-
+{% block footer %}
+{% include 'footer.html'%}
+{% endblock footer %}
