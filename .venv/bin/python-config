@@ -1,4 +1,4 @@
-#!/home/om/Laveen/laveen/.venv/bin/python
+#!/home/sumit/Laveen/.venv/bin/python
 
 import sys
 import getopt

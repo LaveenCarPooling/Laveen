@@ -1,4 +1,4 @@
-#!/home/om/Laveen/laveen/.venv/bin/python3
+#!/home/sumit/Laveen/.venv/bin/python3.6
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
