@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}About Laveen-CarPooling{% endblock title %}
+{% block navbar %}
+{% include 'navbar.html' %}
+{% endblock navbar %}
 {% block content %}
+
 
 
 <style>
@@ -71,6 +75,7 @@ html {
  .column {
    width: 100%;
    display: block;
+   height:600px;
  }
 }
 
@@ -79,6 +84,7 @@ html {
 }
 
 </style>
+
 
 
 <div class="about-section">
@@ -94,20 +100,16 @@ html {
   </div>
   
   
-  <div class="row" style="background-color: whitesmoke;"> 
+  <div class="row" style="background-color: whitesmoke">
+         
     <div class="column">
       <div class="card">
-        <img src="{% static '/media/images/back9.jpeg' %}" style="width:100%; border-radius: 10%;">
+        <img src="{% static '/media/images/back9.jpeg' %}" style="width:100%; border-radius: 10%;height: 410px;">
         <div class="container">
           <h2>Why Carpooling?</h2>
           <p >Problems like traffic,
               fuel cost, climate concerns and
               many more.</p>
-          So, just by sharing
-              car with passengers by same
-              routes we can reduce all costs.
-          
-        
         </div>
       </div>
     </div>
@@ -125,22 +127,33 @@ html {
   
     <div class="column">
       <div class="card">
-        <img src="{% static '/media/images/tree1.jpg' %}" style="width:100%; border-radius: 10%;">
+        <img src="{% static '/media/images/tree1.jpg' %}" style="width:100%; border-radius: 10%;height: 410px;">
         <div class="container">
           <h2>Save Environment</h2>
           
           <p>Today it is important to promote
               initiatives to reduce car
-              dependency & </p>
-
-         <p>improve
-              “ENVIRONMENTAL QUALITY”.                                                       
-         
-         </p>     
+              dependency  </p>  
           
           
         </div>
       </div>
     </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="{%static '/media/images/Carpool.jpg' %}" style="width: 100%; border-radius: 10%;height: 410px; ">
+        <div class="container">
+          <h2>Lesser Traffic Jams</h2>
+
+          <P>One of the best ideas to
+            reduce the vehicles on road and ensure
+            scarer traffic.</P>
+        </div>
+      </div>
+    </div>
   </div>
 {% endblock content %}
+{% block footer %}
+{% include 'footer.html'%}
+{% endblock footer %}
