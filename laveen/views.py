@@ -8,3 +8,5 @@ def login(requests):
     return render(requests,'login.html')
 def about(requests):
     return render(requests,'about.html')
+def contactus(requests):
+    return render(requests,'contactus.html')

@@ -24,5 +24,6 @@ urlpatterns = [
     path('',TemplateView.as_view(template_name="index.html"), name="index"),
     path('login/',views.login),
     path('about/',views.about),
+    path('contactus/',views.contactus),
 ]
 urlpatterns += staticfiles_urlpatterns()
