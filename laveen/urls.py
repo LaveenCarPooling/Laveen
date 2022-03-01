@@ -17,9 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from django.views.generic.base import TemplateView
 from laveen import views
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',TemplateView.as_view(template_name="index.html"), name="index"),
-    path('login/',views.login)
+    path('login/',views.login),
+    path('about/',views.about),
 ]
+urlpatterns += staticfiles_urlpatterns()
