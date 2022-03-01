@@ -1,57 +1,62 @@
 {% extends "base.html" %}
 {% load static %}
 {% block css %}
-    <link rel="stylesheet" href="{% static '/styleSheet/about.css' %}" />
+<link rel="stylesheet" href="{% static '/styleSheet/about.css' %}" />
 {% endblock css %}
 {% block title %}
-    About Laveen-CarPooling
+About Laveen-CarPooling
 {% endblock title %}
 {% block content %}
-    <div class="about-section">
-        <img src="{% static '/media/images/back.jpg' %}"
-             style="border-radius: 15%;"/>
-        <h1>Car Pooling</h1>
-        <p>
-            Carpooling helps the environment, your wallet, and your trip to work-get on board with carpool.
-        </p>
+<div class="about-section">
+
+  <img src="{% static '/media/images/back.jpg' %}" style="border-radius: 15%;">
+  <h1>Car Pooling</h1>
+  <p>Carpooling helps the environment, your wallet, and your trip to work-get on board with carpool.</p>
+
+</div>
+
+
+<div class="row" style="background-color: whitesmoke">
+
+  <div class="column">
+    <div class="card">
+      <img src="{% static '/media/images/back9.jpeg' %}" style="width:100%; border-radius: 10%;height: 410px;">
+      <div class="container">
+        <h2>Why Carpooling?</h2>
+        <p>Problems like traffic,
+          fuel cost, climate concerns and
+          many more.</p>
+      </div>
     </div>
-    <div class="row" style="background-color: whitesmoke;">
-        <div class="column">
-            <div class="card">
-                <img src="{% static '/media/images/back9.jpeg' %}"
-                     style="width:100%;
-                            border-radius: 10%;">
-                <div class="container">
-                    <h2>Why Carpooling?</h2>
-                    <p >
-                        Problems like traffic,
-                        fuel cost, climate concerns and
-                        many more.
-                    </p>
-                    So, just by sharing
-                    car with passengers by same
-                    routes we can reduce all costs.
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="card">
-                <img src="{% static '/media/images/tree1.jpg' %}"
-                     style="width:100%;
-                            border-radius: 10%;"/>
-                <div class="container">
-                    <h2>Save Environment</h2>
-                    <p>
-                        Today it is important to promote
-                        initiatives to reduce car
-                        dependency &
-                    </p>
-                    <p>
-                        improve
-                        “ENVIRONMENTAL QUALITY”.
-                    </p>
-                </div>
-            </div>
-        </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="{% static '/media/images/tree1.jpg' %}" style="width:100%; border-radius: 10%;height: 410px;">
+      <div class="container">
+        <h2>Save Environment</h2>
+
+        <p>Today it is important to promote
+          initiatives to reduce car
+          dependency </p>
+
+
+      </div>
     </div>
-{% endblock content %}
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="{%static '/media/images/Carpool.jpg' %}" style="width: 100%; border-radius: 10%;height: 410px; ">
+      <div class="container">
+        <h2>Lesser Traffic Jams</h2>
+
+        <P>One of the best ideas to
+          reduce the vehicles on road and ensure
+          scarer traffic.</P>
+      </div>
+    </div>
+
+  </div>
+  {% endblock content %}
+  {% block footer %}
+  {% include 'footer.html'%}
+  {% endblock footer %}
