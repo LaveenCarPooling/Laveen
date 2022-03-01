@@ -2,5 +2,145 @@
 {% load static %}
 {% block title %}About Laveen-CarPooling{% endblock title %}
 {% block content %}
-<img src="{% static '/media/images/back.jpg' %}">
+
+
+<style>
+    body {
+ font-family: Arial, Helvetica, sans-serif;
+ margin: 0;
+}
+
+html {
+ box-sizing: border-box;
+}
+
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+.column {
+ float: left;
+ width: 33.3%;
+ margin-bottom: 16px;
+ padding: 0 8px;
+}
+
+.card {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ margin: 8px;
+}
+
+.about-section {
+ padding: 30px;
+ text-align: center;
+ background-color: #1D8348;
+ color: white;
+}
+
+.container {
+ padding: 0 16px;
+}
+
+.container::after, .row::after {
+ content: "";
+ clear: both;
+ display: table;
+}
+
+.title {
+ color: grey;
+}
+
+.button {
+ border: none;
+ outline: 0;
+ display: inline-block;
+ padding: 8px;
+ color: white;
+ background-color: #000;
+ text-align: center;
+ cursor: pointer;
+ width: 100%;
+}
+
+.button:hover {
+ background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+ .column {
+   width: 100%;
+   display: block;
+ }
+}
+
+.form-group{
+    background-color: #000;
+}
+
+</style>
+
+
+<div class="about-section">
+    
+    <img src="{% static '/media/images/back.jpg' %}" style="border-radius: 15%;">
+    <h1>Car Pooling</h1>
+    <p>Carpooling helps the environment, your wallet, and your trip to work-get on board with carpool.</p>
+    
+
+
+
+     
+  </div>
+  
+  
+  <div class="row" style="background-color: whitesmoke;"> 
+    <div class="column">
+      <div class="card">
+        <img src="{% static '/media/images/back9.jpeg' %}" style="width:100%; border-radius: 10%;">
+        <div class="container">
+          <h2>Why Carpooling?</h2>
+          <p >Problems like traffic,
+              fuel cost, climate concerns and
+              many more.</p>
+          So, just by sharing
+              car with passengers by same
+              routes we can reduce all costs.
+          
+        
+        </div>
+      </div>
+    </div>
+  
+    <!-- <div class="column">
+         
+         <form onsubmit="return false;">
+              <h2 class="text-center">Contact us</h2>
+              <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
+              <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+              <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14"></textarea></div>
+              <div class="form-group"><button class="btn btn-primary" type="submit">send </button></div>
+          </form>
+    </div> -->
+  
+    <div class="column">
+      <div class="card">
+        <img src="{% static '/media/images/tree1.jpg' %}" style="width:100%; border-radius: 10%;">
+        <div class="container">
+          <h2>Save Environment</h2>
+          
+          <p>Today it is important to promote
+              initiatives to reduce car
+              dependency & </p>
+
+         <p>improve
+              “ENVIRONMENTAL QUALITY”.                                                       
+         
+         </p>     
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock content %}
